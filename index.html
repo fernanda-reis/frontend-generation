@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Sobre mim</title>
   </head>
   <body>
@@ -19,36 +20,46 @@
     </nav>
 
     <main>
-      <h1>Olá Mundo</h1>
+      <h1 class="titulo">Olá Mundo</h1>
 
-      <section id="sobreMim">
-        <p>
-          Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti
-          sociosqu ad litora torquent. Todo mundo vê os porris que eu tomo, mas
-          ninguém vê os tombis que eu levo!Tá deprimidis, eu conheço uma
-          cachacis que pode alegrar sua vidis.Mé faiz elementum girarzis, nisi
-          eros vermeio.
-        </p>
+      <section id="sobreMim" class="container">
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab
-          tenetur fuga recusandae! Aut exercitationem sequi sint sed obcaecati
-          rerum tenetur libero omnis dicta, dolorum expedita iusto ex quo quas. 
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolore 
-          veritatis sequi. Quae labore nisi a aut vitae alias deserunt ullam non 
-          perspiciatis accusantium rerum, expedita aliquid facilis cupiditate 
-          corrupti.
-        </p>
 
-        <img
+        <div class="texto">
+          <p class=justify>
+            Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti
+            sociosqu ad litora torquent. Todo mundo vê os porris que eu tomo, mas
+            ninguém vê os tombis que eu levo!Tá deprimidis, eu conheço uma
+            cachacis que pode alegrar sua vidis.Mé faiz elementum girarzis, nisi
+            eros vermeio.
+          </p>
+  
+          <p class=justify>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab
+            tenetur fuga recusandae! Aut exercitationem sequi sint sed obcaecati
+            rerum tenetur libero omnis dicta, dolorum expedita iusto ex quo quas. 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolore 
+            veritatis sequi. Quae labore nisi a aut vitae alias deserunt ullam non 
+            perspiciatis accusantium rerum, expedita aliquid facilis cupiditate 
+            corrupti.
+          </p>
+        </div>
+
+        <div>
+          <img
+          class="fotoPerfil"
           src="./assets/img/mordecai.png"
           alt="Mordecai doido segurando uma caneca de café"
           width=300em;
-        />
+          />
+        </div>
+
+
       </section>
 
-      <section id="meuVideo">
-        <h2>Meu vídeo favorito</h2>
+      <h2 class="titulo">Meu vídeo favorito</h2>
+     
+      <section id="meuVideo" class="container video">
 
         <iframe
           width="727"
@@ -62,8 +73,26 @@
         </iframe>
       </section>
 
+
       <footer>
+        <hr>
+
+        <!--flaticon.com-->
+        <div>
+
+          <a href="https://github.com" target="_blank">
+            <img class="icon" src="./assets/img/github.png" alt="Logo do github">
+          </a>
+
+          <a href="https://linkedin.com" target="_blank">
+            <img class="icon" src="./assets/img/linkedin.png" alt="Logo do linkedin">
+          </a>
+
+
+        </div>
+
           <p>Feito com carinho e dedicação - 2022 ❤</p>
+
       </footer>
     </main>
   </body>

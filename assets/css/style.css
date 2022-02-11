@@ -1,0 +1,67 @@
+/*Estilo página Index*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    margin: 30px;
+    text-align: center;
+}
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+nav {
+    background-color: rgba(124, 31, 255, 0.796);
+    padding: 1.5rem;
+}
+
+
+nav li {
+    display: inline;
+    padding: 15px;
+    font-size: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.texto {
+    text-align: center;
+    width: 50%;
+    
+}
+
+.video {
+    margin-bottom: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+.icon {
+    width: 50px;
+    margin: 20px;
+}
+
+.justify {
+    text-align: justify;
+}
+
+
+/*Estilo página Contato*/
+.ml-50 {
+    margin-left: 50px;
+}
