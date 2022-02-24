@@ -15,6 +15,11 @@ main {
 
 }
 
+a:active,
+a:hover{
+  font-weight: bolder;
+}
+
 .home {
   background-image: url("../img/oscar-header.jpg");
   font-family: "Open Sans";
@@ -45,7 +50,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-right: 5em;
+  margin-right: 8em;
 }
 
 .titulo {
@@ -63,12 +68,14 @@ main {
   font-family: "Roboto", sans-serif;
   text-align: justify;
   margin-left: 50%;
+  margin-right: auto;
   margin-top: 2em;
   color: #ffffff;
 }
 
 .video {
     margin-left: 50%;
+    margin-right: auto;
     margin-top: 2em;
     margin-bottom: 3em;
 
@@ -85,15 +92,42 @@ main {
 .cartazes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin: 2em;
+}
+
+.cartaz {
+  position: relative;
+  width: 18rem;
+  overflow: hidden;
+  font-family: sans-serif;
 }
 
 .cartazes img {
     width: 18rem;
     height: 25rem;
     margin: 1em;
+}
 
+.cartazInfo {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  opacity: 0;
+ 
+  
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;    
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.cartaz img:hover{
+  opacity: 0.5;
+  bottom:10px;
 }
 
 .vote {
@@ -146,7 +180,7 @@ label {
       background-color: #21182d;
       color:#ffffff;
       align-self: end;
-
+      cursor: pointer;
   }
 
 footer {
