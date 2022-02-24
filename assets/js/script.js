@@ -46,8 +46,8 @@ function validaFilme() {
 function enviar() {
     if (nomeOk && emailOk && filmeOk) {
         let voto = filme.value
-        alert('Voto em ' + voto + ' computado com sucesso!')
+        alert('Voto em ' + voto + ' computado com sucesso! :)')
     } else {
-        alert('Preencha o formulário corretamente.')
+        alert('Preencha o formulário corretamente!')
     }
 }
