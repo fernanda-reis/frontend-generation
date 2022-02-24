@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Oscar 2022</title>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="./index.html"> HOME </a>
+          </li>
+
+          <li>
+            <a href="indicados.html"> CONHEÇA OS INDICADOS </a>
+          </li>
+
+          <li>
+            <a href="./vote.html"> VOTE </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="vote">
+
+      <section class="formulario"> 
+       
+        <form>
+
+          <h2>Vote no Melhor Filme de 2022</h2>
+          <label for="nome">Nome* </label> <br />
+          <input type="text" id="nome" onkeyup="validaNome()" />
+          <div id="txtNome"></div>
+
+          <br />
+
+          <label for="email">Email* </label> <br />
+          <input type="email" id="email" onkeyup="validaEmail()" />
+          <div id="txtEmail"></div>
+
+          <br />
+          
+          <label for="melhorFilme">Melhor Filme*</label> <br />
+          <select name="melhorFilme" id="melhorFilme" onchange="validaFilme()">
+              <option value="">Selecione o Filme</option>
+              <option value="Belfast">Belfast</option>
+              <option value="Amor, Sublime Amo">Amor, Sublime Amor</option>
+              <option value="Ataque dos Cães">Ataque dos Cães</option>
+              <option value="Drive My Car">Drive My Car</option>
+              <option value="Duna">Duna</option>
+              <option value="King Richard: Criando Campeãs">King Richard: Criando Campeãs</option>
+              <option value="Não Olhe para Cima">Não Olhe para Cima</option>
+              <option value="No Ritmo do Coração">No Ritmo do Coração</option>
+              <option value="O Beco do Pesadelo">O Beco do Pesadelo</option>
+          </select>
+          <div id="txtFilme"></div>
+
+          <br />
+          
+          <label for="comentario">Comentários </label> <br />
+          <textarea
+            name="comentario"
+            id="comentario"
+            cols="60"
+            rows="3"
+          ></textarea>
+          <br />
+
+          <button onclick="enviar()">Votar</button>
+        </form>
+      </section>
+
+      <section id="localizacao">
+        <p>Localização: Teatro Dolby - Hollywood</p>
+
+        <iframe
+          id="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.717550974601!2d-118.34244623478364!3d34.102375480592244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf23c3bb14c7%3A0xf5f01d0d3b59ab76!2sTeatro%20Dolby!5e0!3m2!1spt-BR!2sbr!4v1645660742750!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Todos os direitos reservados -
+        <a href="https://www.oscars.org/">https://www.oscars.org/</a>
+      </p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

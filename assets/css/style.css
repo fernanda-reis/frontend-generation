@@ -1,67 +1,165 @@
-/*Estilo página Index*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Volkhov&display=swap");
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #0f8b8d 0%, #3b3b63 108%);    margin: 0;
+    background-repeat: no-repeat;
+}
+
+main {
+    min-height: 100vh;
+
+}
+
+.home {
+  background-image: url("../img/oscar-header.jpg");
+  font-family: "Open Sans";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu {
+  padding: 1.2em;
+  background-color: #21182d;
+  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #dad2d8;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+.inicial {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 5em;
 }
 
 .titulo {
-    margin: 30px;
-    text-align: center;
-}
-.container {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-nav {
-    background-color: rgba(124, 31, 255, 0.796);
-    padding: 1.5rem;
+  font-size: 5rem;
+  font-family: "Volkhov", serif;
+  color: #ffffff;
+  margin-left: 50%;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 0.8em;
 }
 
-
-nav li {
-    display: inline;
-    padding: 15px;
-    font-size: 20px;
-}
-
-nav li a {
-    text-decoration: none;
-    color: black;
-}
-
-nav li a:hover {
-    color: rgb(255, 255, 255);
-}
-
-.texto {
-    text-align: center;
-    width: 50%;
-    
+.inicial p {
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  margin-left: 50%;
+  margin-top: 2em;
+  color: #ffffff;
 }
 
 .video {
-    margin-bottom: 50px;
+    margin-left: 50%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+
 }
+
+
+.indicados h2 {
+    font-family: "Volkhov", serif;
+    text-align: center;
+    color: #ffffff;
+    margin: 2em;
+}
+
+.cartazes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em;
+}
+
+.cartazes img {
+    width: 18rem;
+    height: 25rem;
+    margin: 1em;
+
+}
+
+.vote {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.vote h2 {
+    font-family: "Volkhov", serif;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+
+.vote p {
+    font-family: "Roboto", serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.5em;
+    color: #ffffff; 
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px 20px;
+    border: 4px solid #f2eef8;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+
+label {
+      font-size: 1.3rem;
+      font-family: Roboto, sans-serif;
+      color: #ffffff;
+  }
+
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+  button {
+      width: 6rem;
+      height: 3rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      font-size: 1.3rem;
+      background-color: #21182d;
+      color:#ffffff;
+      align-self: end;
+
+  }
 
 footer {
-    text-align: center;
-    padding: 30px;
+  padding: 1em;
+  background-color: #21182d;
 }
 
-.icon {
-    width: 50px;
-    margin: 20px;
+footer p {
+  font-family: Roboto, sans-serif;
+  color: #dad2d8;
+  text-align: center;
 }
 
-.justify {
-    text-align: justify;
-}
-
-
-/*Estilo página Contato*/
-.ml-50 {
-    margin-left: 50px;
+footer p a {
+  color: #dad2d8;
 }
